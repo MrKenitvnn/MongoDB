@@ -15,6 +15,12 @@
 ##### Install the Latest Development Release of MongoDB
  >$ brew install mongodb --devel
  
+- Sau khi cài đặt 
+ - The databases are stored in the /usr/local/var/mongodb/ directory
+ - The mongod.conf file is here: /usr/local/etc/mongod.conf
+ - The mongo logs can be found at /usr/local/var/log/mongodb/
+ - The mongo binaries are here: /usr/local/Cellar/mongodb/[version]/bin
+
 
 Start MongoDB
 >$ brew services start mongodb
