@@ -32,3 +32,39 @@ Shutdown
 
 For more options
 >$ brew info mongodb
+
+
+
+## CentOS
+
+#### 1. Tạo file cài đặt 
+>$ sudo touch /etc/yum.repos.d/mongodb-org-3.4.repo
+
+Thêm nội dung sau để cài đặt mongo 3.4:
+```
+[mongodb-org-3.4]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
+```
+
+>$ sudo vim /etc/yum.repos.d/mongodb-org-3.4.repo
+ - Nhấn A để insert 
+ - Paste nội dung trên.
+ - Esc -> :wq để lưu nội dung
+
+
+#### 2. Cài đặt
+>$ sudo yum install -y mongodb-org
+
+
+Start
+>$ systemctl start mongod
+
+Check mongo service status
+>$ systemctl status mongod
+
+
+
