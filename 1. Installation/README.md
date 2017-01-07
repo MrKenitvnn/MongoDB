@@ -67,4 +67,24 @@ Check mongo service status
 >$ systemctl status mongod
 
 
+## Window
+
+#### 1. Tải về mongodb
+https://www.mongodb.com/download-center#community
+
+#### 2. Cài đặt
+
+Tạo 1 folder mongodata
+>$ mkdir C:\Users\mryit\Desktop\mongodata
+
+Start mongo server và data được lưu ở folder ```mongodata```
+>$ cd C:\Program Files\MongoDB\Server\3.4\bin\
+
+>$ mongod.exe --dbpath C:\Users\mryit\Desktop\mongodata
+
+Tiếp tục tại folder ```bin```
+>$ mongo
+
+
+
 
